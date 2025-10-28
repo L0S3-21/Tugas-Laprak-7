@@ -3,10 +3,13 @@ import java.util.Scanner; // untuk memanggil objek scanner
 public class Nomor5 { // untuk membuat class
     public static void main(String[] args) { // untuk memulai program
         Scanner input = new Scanner(System.in); // untuk membuat variabel dari objek scanner
-
         int jumlah = 1, berat = 0, kecil = 0, sedang = 0, besar = 0; // untuk mendeklarasikan tipe variabel dan menginisialisasi nilai variabel
 
-        while (jumlah <= 10) { // untuk membuat kondisi looping sampai batas looping tercapai 
+        System.out.print("Masukkan jumlah buah = ");
+        int buah = input.nextInt();
+        System.out.println();
+
+        while (jumlah <= buah) { // untuk membuat kondisi looping sampai batas looping tercapai 
             System.out.print("Masukkan Berat Mangga ke " + jumlah + " = ");  // untuk mencetak tulisan beserta nilai variabel
             berat = input.nextInt(); // untuk memasukkan input user kedalam variabel bertipe int
             System.out.println();
